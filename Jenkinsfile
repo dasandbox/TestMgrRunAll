@@ -55,7 +55,7 @@ pipeline {
         }
         stage('Run Each Testcase') {
             steps {
-                echo 'Stage: Test Manager'
+                echo 'Stage: Run Each Testcase'
                 dir('common') {
                     script {
                         def cases = readFile("tomahawk-tcid.txt").split("\\r?\\n");
